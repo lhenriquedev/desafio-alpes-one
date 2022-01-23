@@ -1,0 +1,498 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "BMWTypeNext-Pro-Light";
+  src: url("../assets/fonts/BMWTypeNextPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BMWTypeNext-Pro-Bold";
+  src: url("../assets/fonts/BMWTypeNextPro-Bold.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "BMWTypeNext-Pro-Light";
+  font-weight: 400;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  overflow: hidden;
+}
+
+main .button--hidden {
+  display: none;
+}
+
+.heading-secondary {
+  font-family: "BMWTypeNext-Pro-Light";
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6rem;
+  color: #262626;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-family: "BMWTypeNext-Pro-Bold";
+  height: 4.5rem;
+  border: none;
+  background-color: #1c69d4;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #0351be;
+}
+
+.form {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 25.5rem;
+  padding: 1.4rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.form__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.form__heading img {
+  color: #1c69d4;
+}
+
+.form__heading p {
+  font-family: "BMWTypeNext-Pro-Light";
+  font-size: 2rem;
+}
+
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "BMWTypeNext-Pro-Light";
+}
+
+.form__group input,
+.form__group select,
+.form__group textarea {
+  font-family: inherit;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #bbbbbb;
+  padding: 1rem 0;
+  /* Questões de acessibilidade, mudar futuramente */
+  outline: 0;
+}
+
+.form__group input:focus,
+.form__group select:focus,
+.form__group textarea:focus {
+  border-color: #1c69d4;
+  border-width: 1px;
+}
+
+.form__group--checkbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.2rem 1fr;
+      grid-template-columns: 1.2rem 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.form__group--checkbox input {
+  margin-top: 0.1rem;
+}
+
+.form__group--checkbox label {
+  cursor: pointer;
+}
+
+.form__group--checkbox span {
+  font-weight: 600;
+}
+
+.form__group--checkbox span:hover {
+  color: #1c69d4;
+}
+
+.social-media {
+  font-family: "BMWTypeNext-Pro-Light";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+}
+
+.social-media p {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #666666;
+}
+
+.social-media img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.hidden-link:link,
+.hidden-link:visited {
+  display: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "BMWTypeNext-Pro-Bold";
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+}
+
+.hidden-link:link img,
+.hidden-link:visited img {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.header {
+  padding: 0 3.2rem;
+  height: 15rem;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 4rem;
+}
+
+.header__nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+.header__nav-link {
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: "BMWTypeNext-Pro-Bold";
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+}
+
+.header__nav-link--whats {
+  background-color: #25d366;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+.header nav ul a {
+  font-family: "BMWTypeNext-Pro-Bold";
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #666666;
+}
+
+.header__logo {
+  height: 9.2rem;
+}
+
+.header .hidden-link {
+  display: none;
+}
+
+.hero {
+  height: 90vh;
+  background: url("../assets/imgs/banners/desktop-.jpg");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero__dots-dot {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+.hero__dots-dot:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.hero__dots-dot--active {
+  background-color: #1c69d4;
+}
+
+.section-cars {
+  padding: 8rem 0;
+}
+
+.section-cars__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31.5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31.5rem, 1fr));
+  gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-cars__car__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.section-cars__car__image:hover {
+  -webkit-filter: grayscale(50);
+          filter: grayscale(50);
+  opacity: 90%;
+}
+
+.section-cars__car__text {
+  font-size: 2rem;
+  font-family: "BMWTypeNext-Pro-Light";
+  color: #262626;
+  margin: 1.6rem 0;
+}
+
+.section-cars__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.section-cars__buttons .button:first-child {
+  display: block;
+  width: 100%;
+}
+
+.section-cars__buttons .button:last-child {
+  display: none;
+}
+
+.footer {
+  background-color: #e6e6e6;
+}
+
+.footer p {
+  font-family: "BMWTypeNext-Pro-Light";
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.footer hr {
+  background-color: #bbbbbb;
+}
+
+.footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo {
+  height: 5rem;
+}
+
+.footer__logo-alpes {
+  height: 12.4rem;
+}
+
+@media (max-width: 52em) {
+  main {
+    position: relative;
+  }
+  .header {
+    height: 6rem;
+  }
+  .header .hidden-link {
+    display: block;
+  }
+  .header .container {
+    padding: 1.5rem 0;
+  }
+  .header__logo {
+    height: 3.45rem;
+  }
+  .header__nav {
+    display: none;
+  }
+  .form {
+    /* 1) Hide it visually */
+    opacity: 0;
+    /* 2) Make it unacessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .form.form--open {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 80%;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 999;
+  }
+  .section-cars__buttons {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .section-cars__buttons .button:first-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    display: block;
+    width: 100%;
+  }
+  .section-cars__buttons .button:last-child {
+    display: block;
+    width: 100%;
+    grid-column: 2/ -1;
+    background-color: #666666;
+  }
+}
+
+@media (max-width: 28em) {
+  main .button--hidden {
+    display: block;
+    width: 100%;
+  }
+  .hero {
+    background: url("../assets/imgs/banners/mobile-banner.png");
+    background-size: cover;
+    background-position: 50%;
+  }
+  .button {
+    display: block;
+    width: 100%;
+  }
+  .heading-secondary {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

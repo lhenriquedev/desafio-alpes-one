@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "BMWTypeNext-Pro-Light";
+  src: url("../assets/fonts/BMWTypeNextPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BMWTypeNext-Pro-Bold";
+  src: url("../assets/fonts/BMWTypeNextPro-Bold.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "BMWTypeNext-Pro-Light";
+  font-weight: 400;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  overflow: hidden;
+}

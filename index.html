@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpes One &mdash; Performance Automotiva</title>
+
+    <!-- ############################# CUSTOM CSS ############################# -->
+    <link rel="shortcut icon" href="assets/imgs/logos/logo-alpes.png" type="image/png" />
+    <link rel="stylesheet" href="sass/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="" class="hidden-link">
+          <img src="assets/icons/svg/telefone.svg" alt="ícone de um telefone" />
+          <span>(21) 2042-4442</span>
+        </a>
+
+        <div class="header__nav">
+          <div class="header__nav-items">
+            <a href="#" class="header__nav-link">
+              <img src="assets/icons/svg/icon-fone-white.svg" alt="ícone de um telefone" />
+              <span>(21) 2042-4442</span>
+            </a>
+
+            <a href="#" class="header__nav-link">
+              <img src="assets/icons/svg/icon-360.svg" alt="ícone de um telefone" />
+              <span>Tour Virtual</span>
+            </a>
+
+            <a href="#" class="header__nav-link header__nav-link--whats">
+              <img src="assets/icons/svg/icon-whats.svg" alt="ícone de um telefone" />
+              <span>Whatsapp</span>
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">Z</a></li>
+              <li><a href="#">M</a></li>
+              <li><a href="#">i</a></li>
+              <li><a href="#">Plug-in-Hybrid</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <img src="assets/imgs/logos/logo-bmw-rio.svg" alt="Logo da BMW" class="header__logo" />
+      </div>
+    </header>
+
+    <main>
+      <button class="button button--hidden button--form">Solicite a sua cotação</button>
+
+      <section class="hero">
+        <form action="form.php" class="form form--modal">
+          <div class="form__heading">
+            <img src="assets/icons/svg/icon-carro-blue.svg" alt="Ícone de um carro" />
+            <p>Solicitar cotação</p>
+          </div>
+
+          <div class="form__group">
+            <input type="text" placeholder="Nome" required />
+          </div>
+
+          <div class="form__group">
+            <input type="email" placeholder="E-mail" required />
+          </div>
+
+          <div class="form__group">
+            <input type="tel" placeholder="Telefone" required />
+          </div>
+
+          <div class="form__group">
+            <select name="" required>
+              <option value="" disabled selected>Modelo</option>
+              <option value="bmw-1">BMW Série 1</option>
+              <option value="bmw-m5">BMW M5</option>
+              <option value="bmw-x2">BMW X2</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <input name="mensagem" placeholder="Mensagem" />
+          </div>
+
+          <div class="form__group form__group--checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"> Aceito a <span>Política de Privacidade.</span> </label>
+          </div>
+
+          <button class="button" type="submit">Enviar</button>
+        </form>
+
+        <div class="hero__dots">
+          <div class="hero__dots-dot hero__dots-dot--active"></div>
+          <div class="hero__dots-dot"></div>
+          <div class="hero__dots-dot"></div>
+        </div>
+      </section>
+
+      <section class="section-cars">
+        <h2 class="heading-secondary">Escolha seu BMW</h2>
+
+        <div class="container">
+          <div class="section-cars__container">
+            <!-- 1 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/serie1.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW Série 1</p>
+
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/m3.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW M3 Competition</p>
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/m5.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW M5</p>
+
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/x2.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW X2</p>
+
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/serie-4.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW Série 4</p>
+
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/serie-3.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW Série 3</p>
+
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/z4.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW Z4</p>
+
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class="section-cars__car">
+              <img
+                src="assets/imgs/veiculos/serie2.png"
+                alt="Imagem do carro BMW Série 1"
+                class="section-cars__car__image"
+              />
+              <p class="section-cars__car__text">BMW Série 2</p>
+
+              <div class="section-cars__buttons">
+                <button class="button">Cotação</button>
+                <button class="button button--grey">Ligar</button>
+              </div>
+
+              <div class="social-media">
+                <p>Compartilhe</p>
+                <img src="assets/icons/svg/facebook.svg" alt="ícone do facebook" />
+                <img src="assets/icons/svg/whatsapp.svg" alt="ícone do whatsapp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a elementum orci, vitae
+          commodo nibh. In vitae convallis nisl. Morbi rhoncus mattis purus sed commodo. Integer
+          rhoncus ex risus. Proin efficitur elit nunc, ut pulvinar massa egestas in. Fusce quis quam
+          viverra, pretium quam ac, consectetur lectus.
+        </p>
+
+        <hr />
+
+        <div class="footer__col">
+          <img src="assets/imgs/logos/logo-bmw-rio.svg" class="footer__logo" alt="Logo da BMW" />
+          <p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
+          <img
+            src="assets/imgs/logos/logo-alpes.png"
+            alt="Logo da Alpes One"
+            class="footer__logo--alpes"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="script/script.js"></script>
+  </body>
+</html>

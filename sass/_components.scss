@@ -1,0 +1,154 @@
+main {
+  .button--hidden {
+    display: none;
+  }
+}
+
+.heading-secondary {
+  font-family: "BMWTypeNext-Pro-Light";
+  font-size: 4rem;
+  font-weight: 300;
+
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6rem;
+
+  color: #262626;
+}
+
+.button {
+  display: inline-block;
+
+  font-size: 1.4rem;
+  font-family: "BMWTypeNext-Pro-Bold";
+
+  height: 4.5rem;
+  border: none;
+  background-color: #1c69d4;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #0351be;
+  }
+}
+
+.form {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+
+  width: 25.5rem;
+  padding: 1.4rem 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    img {
+      color: #1c69d4;
+    }
+
+    p {
+      font-family: "BMWTypeNext-Pro-Light";
+      font-size: 2rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "BMWTypeNext-Pro-Light";
+
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #bbbbbb;
+      padding: 1rem 0;
+      /* Questões de acessibilidade, mudar futuramente */
+      outline: 0;
+
+      &:focus {
+        border-color: #1c69d4;
+        border-width: 1px;
+      }
+    }
+
+    &--checkbox {
+      display: grid;
+      grid-template-columns: 1.2rem 1fr;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.2rem;
+
+      input {
+        margin-top: 0.1rem;
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      span {
+        font-weight: 600;
+
+        &:hover {
+          color: #1c69d4;
+        }
+      }
+    }
+  }
+}
+
+.social-media {
+  font-family: "BMWTypeNext-Pro-Light";
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  p {
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #666666;
+  }
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.hidden-link:link,
+.hidden-link:visited {
+  display: none;
+
+  text-decoration: none;
+
+  font-size: 1.4rem;
+  font-family: "BMWTypeNext-Pro-Bold";
+  color: #666666;
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  img {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}

@@ -1,0 +1,178 @@
+.header {
+  padding: 0 3.2rem;
+  height: 15rem;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 0;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+
+    &-items {
+      display: flex;
+      gap: 3rem;
+    }
+
+    &-link {
+      padding: 1rem 2rem;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      font-family: "BMWTypeNext-Pro-Bold";
+      font-size: 1.4rem;
+
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+
+      &--whats {
+        background-color: #25d366;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      list-style: none;
+
+      a {
+        font-family: "BMWTypeNext-Pro-Bold";
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #666666;
+      }
+    }
+  }
+
+  &__logo {
+    height: 9.2rem;
+  }
+
+  & .hidden-link {
+    display: none;
+  }
+}
+
+.hero {
+  height: 90vh;
+  background: url("../assets/imgs/banners/desktop-.jpg");
+  background-size: cover;
+  background-position: 50%;
+
+  position: relative;
+  overflow: hidden;
+
+  &__dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-dot {
+      display: inline-block;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 50%;
+      cursor: pointer;
+
+      background-color: #e6e6e6;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      &--active {
+        background-color: #1c69d4;
+      }
+    }
+  }
+}
+
+.section-cars {
+  padding: 8rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31.5rem, 1fr));
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  &__car {
+    &__image {
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        filter: grayscale(50);
+        opacity: 90%;
+      }
+    }
+
+    &__text {
+      font-size: 2rem;
+      font-family: "BMWTypeNext-Pro-Light";
+      color: #262626;
+      margin: 1.6rem 0;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    margin-bottom: 1.6rem;
+
+    .button:first-child {
+      display: block;
+      width: 100%;
+    }
+
+    .button:last-child {
+      display: none;
+    }
+  }
+}
+
+.footer {
+  background-color: #e6e6e6;
+
+  p {
+    font-family: "BMWTypeNext-Pro-Light";
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  hr {
+    background-color: #bbbbbb;
+  }
+
+  &__col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 5rem;
+  }
+
+  &__logo-alpes {
+    height: 12.4rem;
+  }
+}
