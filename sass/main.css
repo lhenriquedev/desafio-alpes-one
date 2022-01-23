@@ -409,6 +409,10 @@ main .button--hidden {
           align-items: center;
 }
 
+.footer__col-responsive {
+  display: none;
+}
+
 .footer__logo {
   height: 5rem;
 }
@@ -443,6 +447,8 @@ main .button--hidden {
     pointer-events: none;
     /* 3) Hide it from screen readers */
     visibility: hidden;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   .form.form--open {
     position: absolute;
@@ -473,6 +479,27 @@ main .button--hidden {
     width: 100%;
     grid-column: 2/ -1;
     background-color: #666666;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+  .footer__col {
+    display: none;
+  }
+  .footer__col-responsive {
+    display: block;
+  }
+  .footer__col-responsive p:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
   }
 }
 

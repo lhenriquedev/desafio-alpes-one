@@ -29,6 +29,8 @@
     pointer-events: none;
     /* 3) Hide it from screen readers */
     visibility: hidden;
+
+    transition: all 0.3s ease-in;
   }
 
   .form.form--open {
@@ -61,6 +63,27 @@
       grid-column: 2/ -1;
 
       background-color: #666666;
+    }
+  }
+
+  .footer {
+    & p {
+      font-size: 1rem;
+    }
+
+    &__col {
+      display: none;
+
+      &-responsive {
+        display: block;
+
+        & p:last-child {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
     }
   }
 }
